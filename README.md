@@ -2,13 +2,13 @@ In this Ethereum / React.js project, the logic of a multiple-choice questionnair
 
 ## Survey contract
 
-- The contract [Survey.sol](https://github.com/DGalinec/lottery/blob/master/Ethereum/contracts/Lottery.sol) is written in the Solidity programming language.
+- The contract [Survey.sol](https://github.com/DGalinec/survey-react/blob/master/Ethereum/contracts/Survey.sol) is written in the Solidity programming language.
 
 - The contract has been pre-compiled and pre-tested on the [Remix](http://remix.ethereum.org/#optimize=false&version=soljson-v0.4.24+commit.e67f0147.js) Solidity IDE.
 
-- The contract is compiled using the [solc](https://github.com/ethereum/solc-js) Solidity compiler. The script is called [compile.js](https://github.com/DGalinec/lottery/blob/master/Ethereum/compile.js).
+- The contract is compiled using the [solc](https://github.com/ethereum/solc-js) Solidity compiler. The script is called [compile.js](https://github.com/DGalinec/survey-react/blob/master/Ethereum/compile.js).
 
-- The [Mocha](https://mochajs.org/) JavaScript test framework paired with the [Ganache](https://github.com/trufflesuite/ganache) personnal blockchain for Ethereum development were used to test the behaviour of the different contract functions on the blockchain. The JavaScript file containing the different tests is named [Survey.test.js](https://github.com/DGalinec/lottery/blob/master/test/Lottery.test.js).
+- The [Mocha](https://mochajs.org/) JavaScript test framework paired with the [Ganache](https://github.com/trufflesuite/ganache) personnal blockchain for Ethereum development were used to test the behaviour of the different contract functions on the blockchain. The JavaScript file containing the different tests is named [Survey.test.js](https://github.com/DGalinec/survey-react/blob/master/test/Survey.test.js).
 
 - The contract was deployed on the [Rinkeby](https://www.rinkeby.io/#stats) network (Ethereum testnet at address [0xee9fa53720cB568CcFaD8aAAEDd043Ab03AB463C](https://rinkeby.etherscan.io/address/0xee9fa53720cB568CcFaD8aAAEDd043Ab03AB463C) using [truffle hdwallet provider](https://github.com/trufflesuite/truffle-hdwallet-provider).
 
@@ -16,9 +16,9 @@ In this Ethereum / React.js project, the logic of a multiple-choice questionnair
 
 - This project is was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-- Main JavaScript source code of the user interface with calls to the Ethreum blockchain is in [App.js](https://github.com/DGalinec/lottery/blob/master/src/App.js) file.
+- Main JavaScript source code of the user interface with calls to the Ethreum blockchain is in [App.js](https://github.com/DGalinec/survey-react/blob/master/src/App.js) file.
 
-- A number of Solidity events are being watch in [App.js](https://github.com/DGalinec/survey-truffle/blob/master/src/js/app.js).
+- A number of Solidity events are being watch in [App.js](https://github.com/DGalinec/survey-react/blob/master/src/App.js).
 
 ```
 user account       - listenForEvents()         - fires when the user account has changed -
@@ -29,7 +29,7 @@ deletedEvent       - watchDeletedEvent()       - fires when the survey manager d
 undeletedEvent     - watchUndeletedEvent()     - fires when the survey manager undeleted one of the choices -
 ```
 
-- Interface between the user interface and the contract running on the Ethereum blockchain is [survey.js](https://github.com/DGalinec/lottery/blob/master/src/lottery.js) file. It contains the JSON Application Binary Interface (ABI) and contract address on the Rinkeby network.
+- Interface between the user interface and the contract running on the Ethereum blockchain is [survey.js](https://github.com/DGalinec/survey-react/blob/master/src/survey.js) file. It contains the JSON Application Binary Interface (ABI) and contract address on the Rinkeby network.
 
 - Contract requires [MetaMask](https://metamask.io/) plugin to be installed in your Chrome or FireFox browser and be settled on the Rinkeby network in order to pay for transactions.
 
